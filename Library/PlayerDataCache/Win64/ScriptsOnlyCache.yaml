@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - KeepAudio
     - MainMenu
     - PlayerController
     Unity.2D.Tilemap.Editor.dll:
@@ -66,7 +67,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 11724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -96,36 +97,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 11182}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11802}
+      Script: {instanceID: 11810}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12212}
+      Script: {instanceID: 12220}
     - Class: 114
-      Script: {instanceID: 12444}
+      Script: {instanceID: 12452}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12466}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12478}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12730}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12898}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13144}
+    - Class: 114
+      Script: {instanceID: 15316}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -587,6 +594,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeepAudio
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
