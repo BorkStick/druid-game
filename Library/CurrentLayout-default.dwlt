@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 107
+  controlID: 19
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 442}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 0
-  controlID: 106
+  controlID: 44
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 342}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 101
+  controlID: 134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 442}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 105
+  controlID: 133
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -503,20 +503,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Graphics
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Graphics
   m_LastFoldersGridSize: 16
   m_LastProjectPath: W:\PROJECTS\GAME\UNITY\DruidGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2350000
-    m_LastClickedID: 13746
-    m_ExpandedIDs: 00000000a0350000a235000000ca9a3b
+    m_SelectedIDs: ea360000
+    m_LastClickedID: 14058
+    m_ExpandedIDs: 00000000dc360000de36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,7 +544,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a0350000a2350000
+    m_ExpandedIDs: 00000000dc360000de360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -572,7 +572,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000b8350000f03300000836000032340000a6360000
+    m_ExpandedInstanceIDs: c6230000b8350000f03300000836000032340000a63600008c400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -667,23 +667,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3a410000
-      m_LastClickedID: 16698
-      m_ExpandedIDs: 24ecfffffe330000203400008e340000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: eee8ffff02e9ffff98e9ffffb6e9fffff4f9ffff08faffff9efaffffbcfaffff6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Main Camera
-        m_OriginalName: Main Camera
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 16698
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 3.6440883
     speed: 2
-    m_Value: 3.8157992
+    m_Value: 3.6440883
   m_Ortho:
     m_Target: 1
     speed: 2
