@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour
         {
             movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
             Vector3 mouseMovement = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0.0f);
+            FindObjectOfType<AudioManager>().Play("Run");
+
             aim = aim + mouseMovement;
             if (aim.magnitude > 1.0f)
             {
@@ -105,12 +107,14 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButton("AttackC"))
             {
                 Debug.Log("ATTACK Controller");
+                FindObjectOfType<AudioManager>().Play("Attack");
             }
         } else
         {
             if (Input.GetButton("AttackM"))
             {
                 Debug.Log("ATTACK Mouse");
+                FindObjectOfType<AudioManager>().Play("Attack");
             }
         }
     }
@@ -159,6 +163,7 @@ public class PlayerController : MonoBehaviour
             if (endOfAiming)
             {
                 Debug.Log("FIRE!");
+                FindObjectOfType<AudioManager>().Play("Shoot");
                 GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
                 arrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * 3.0f;
                 arrow.transform.Rotate(0.0f, 0.0f, Mathf.Atan2(shootingDirection.y, shootingDirection.x) * Mathf.Rad2Deg);

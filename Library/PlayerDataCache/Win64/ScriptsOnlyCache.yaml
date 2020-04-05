@@ -1,9 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
+    - CameraController
     - KeepAudio
     - MainMenu
+    - PauseMenu
     - PlayerController
+    - SlimeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -21,8 +25,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationBlendTree.Node
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -36,6 +43,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/BasicMovementAndAnimation.unity:
     - Class: 1
@@ -60,6 +68,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -67,8 +79,32 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11180}
+    - Class: 114
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
       Script: {instanceID: 11722}
+    - Class: 114
+      Script: {instanceID: 11808}
+    - Class: 114
+      Script: {instanceID: 12220}
+    - Class: 114
+      Script: {instanceID: 12420}
+    - Class: 114
+      Script: {instanceID: 12732}
+    - Class: 114
+      Script: {instanceID: 13116}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 114
+      Script: {instanceID: 95712}
+    - Class: 114
+      Script: {instanceID: 243620}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -79,6 +115,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -114,25 +156,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11834}
     - Class: 114
-      Script: {instanceID: 12218}
+      Script: {instanceID: 12220}
     - Class: 114
-      Script: {instanceID: 12450}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12464}
+      Script: {instanceID: 12468}
     - Class: 114
-      Script: {instanceID: 12476}
+      Script: {instanceID: 12480}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12728}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13054}
     - Class: 114
-      Script: {instanceID: 13112}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13144}
+      Script: {instanceID: 13148}
+    - Class: 114
+      Script: {instanceID: 243620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -302,7 +346,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: dbb1ad15ed10c3b9a9987e95f75c8f77
+      Hash: 83597ee325aa7946cac98f88fc3d29d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -348,6 +392,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 769f420b28c712e8225a360ae73a0340
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerControllerold
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -414,6 +464,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: d0dd4b985afe087bfb2dbbcfd3bba283
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SlimeController
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
@@ -590,6 +646,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 5fa4dd2457fda37f1a6b09a185d31cc0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -600,6 +662,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 66056c2209ff8e6b238f8b056c7eb331
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
